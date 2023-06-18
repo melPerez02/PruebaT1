@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-color-primary">
+        <div class="container-fluid px-4">
+
+            <a class="navbar-brand" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" fill="#FFF" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </a>
+
+            <div class="logo">
+                <svg width="85" height="30" viewBox="0 0 85 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M84.7896 0H67.5912H4.86155L4.18198 3.19618H10.664L0 50.7342H4.1297L14.7415 3.19618H66.9116H73.3937L62.7297 50.7342H66.8594L77.4711 3.19618H84.0577L84.7896 0Z"
+                        fill="#13B497" />
+                </svg>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <div class="me-auto w-100 ms-5">
+                    <form class="d-flex w-50" role="search">
+                        <input class="form-control me-2 input-search " type="search" placeholder="Search here"
+                            aria-label="Search">
+                        <button class="btn btn-success d-flex align-items-center justify-content-center tools"
+                            type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-gear" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+                                <path
+                                    d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="container-actions mx-3 d-flex gap-3">
+                    <button type="button" class="btn btn-outline-secondary rounded-10px position-relative">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                            0
+                        </span>
+                        <svg class="iconsHeader" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                        </svg>
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary rounded-10px position-relative">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                            0
+                        </span>
+                        <svg class="iconsHeader" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                            <path
+                                d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary rounded-10px position-relative">
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
+                            0
+                        </span>
+                        <svg class="iconsHeaderGift" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+                            <path
+                                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z" />
+                        </svg>
+                    </button>
+                </div>
+
+                <button
+                    class="btn btn-dark btn-outline-light dropdown-toggle rounded-10px  p-0 pe-2 d-flex align-items-center"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg class="me-2 rounded-10px" xmlns="http://www.w3.org/2000/svg" height="35" fill="#C4C4C4"
+                        class="bi bi-square-fill" viewBox="0 0 16 16">
+                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z" />
+                    </svg>
+                    <span>David</span>
+                </button>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-breadcrumb bg-gray px-5 py-2 d-flex align-items-center d-none d-sm-block ">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb p-0 m-0">
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">&nbsp;</li>
+            </ol>
+        </nav>
+    </div>
+
+
+    <div class="container-body p-2 p-md-5">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="card bg-cars">
+                    <div class="card-body rounded-4">
+                        <div class="card-title d-flex justify-content-between">
+                            <div>
+                                <h3 class="text-white">Best Selling</h3>
+                            </div>
+                            <div class="dropdown">
+                                <button class="btn btn-link dropdown-toggle text-decoration-none" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    This Week
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="rounded-4 card-title-legend text-white  d-flex justify-content-between p-3 bg-color-primary">
+                            <span class="tuesday">Tuesday</span>
+                            <span class="tuesday">215,523 pcs</span>
+                        </div>
+                        <img class="img-fluid" src="img/001.jpg" alt="001">
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-12 col-md-6 mb-3 mb-md-0">
+                        <div class="card bg-cars text-white">
+                            <div class="card-body rounded-4">
+                                <div class="card-title d-flex justify-content-between mb-0">
+                                    <div>
+                                        <h3 class="text-white">456k Pcs</h3>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="btn btn-link dropdown-toggle text-decoration-none" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Daily
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="ticketSold">
+                                    <p>Ticket Sold</p>
+                                </div>
+                                <img class="img-fluid" src="img/002.jpeg" alt="002" style="margin-top: 16px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3 mb-md-0">
+                        <div class="card bg-cars text-white">
+                            <div class="card-body rounded-4">
+                                <div class="card-title d-flex justify-content-between mb-0">
+                                    <div>
+                                        <h3 class="text-white">451,509</h3>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="btn btn-link dropdown-toggle text-decoration-none" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            This Week
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="ticketSold">
+                                    <p>Sales</p>
+                                </div>
+                                <img class="img-fluid" src="img/003.jpeg" alt="003">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-12 col-md-6 mb-3 mb-md-0 d-none d-md-block">
+                        <div class="card bg-cars text-white">
+                            <div class="card-body rounded-4">
+                                <div class="card-title d-flex justify-content-between mb-0">
+                                    <div>
+                                        <h3 class="text-white">$456,623</h3>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="btn btn-link dropdown-toggle text-decoration-none" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Monthly
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="ticketSold">
+                                    <p>Income</p>
+                                </div>
+                                <img class="img-fluid" src="img/004.jpeg" alt="004" style="margin-top: 16px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card bg-cars text-white">
+                            <div class="card-body rounded-4">
+                                <div class="dropdown d-none d-md-block" style="text-align: end;">
+                                    <button
+                                        class="btn btn-link dropdown-toggle text-decoration-none justify-content-center"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        This Week
+                                    </button>
+                                </div>
+                                <img class="img-fluid" src="img/005.jpeg" alt="005" style="margin-top: 22px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-12 col-md-6">
+
+                <img class="d-none d-sm-block img-fluid w-100 rounded-4" src="https://picsum.photos/600/300" alt="">
+                <div class="textCarousel text-md-start" style="margin-top: 25px;">
+                    <h3 class="text-white-1">Event Galleries</h3>
+                </div>
+                <div id="carouselExample" class="carousel slide mt-3">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://picsum.photos/seed/picsum/600/300" class="rounded-4 d-block w-100"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://picsum.photos/seed/picsum/600/300" class="rounded-4 d-block w-100"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://picsum.photos/seed/picsum/600/300" class="rounded-4 d-block w-100"
+                                alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+
+:root {
+    --color-1: #24292E;
+    --color-2: #1C2126;
+    --color-3: #C4C4C4;
+    --color-4: #A4A4A4;
+    --color-5: #13B497;
+    --color-6: #2D3339;
+    --color-7: #20262D;
+    --color-8: #B7B7B7;
+    --color-9: #A4A4A4;
+    --color-10: #13B497;
+    --color-11: #8D98A4;
+    --color-11: #ffffff;
+    --color-12: #B9B9B9;
+    --color-13: #2F363D;
+    --color-14: rgba(255, 255, 255, 0.6);
+}
+
+body {
+    background-color: #24292E;
+    color: white;
+}
+
+.bg-color-primary {
+ background-color: #24292E;
+}
+
+.bg-color-secundary {
+   background-color: #1C2126;
+}
+
+.bg-gray {
+    background-color: #2D3339;
+}
+
+.bg-cars {
+    background-color: #272e36;
+}
+
+.bg-color-gray {
+    background-color: #C4C4C4;
+}
+
+.rounded-10px {
+    border-radius: 10px !important;
+}
+
+a {
+    color: #13B497;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #13B497;
+}
+
+.input-search {
+    background-color: #1C2126;
+    color: white;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='gray' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+    
+}
+
+ 
+.input-search::placeholder,
+.input-search:hover,
+.input-search:active,
+.input-search:focus {
+    background-color: #1C2126;
+    color: white;
+}
+
+.card-body {
+    background-color: var(--color-13);
+}
+
+.btn {
+    color:var(--color-8)
+}
+
+.ticketSold {
+    color: var(--color-14);
+    font-size: 14px;
+}
+
+.text-white {
+    font-size: 24px;
+}
+
+.tuesday {
+    font-size: 17px;
+}
+
+.text-white-1{
+    font-size: 36px;
+}
+
+.tools {
+    background-color: var(--color-10);
+}
+
+.iconsHeader{
+    background-color: var(--color-13);
+    color: var(--color-10);
+    border-color: var(--color-13) ;
+}
+
+.iconsHeaderGift{
+    background-color: var(--color-13);
+    color: var(--color-11);
+    border-color: var(--color-13) ;
+}
+
+
+
+
+
+
+
